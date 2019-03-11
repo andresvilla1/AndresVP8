@@ -1,0 +1,70 @@
+<!-- notice how both the opening <html> tag and the closing </html> tag are NOT indented so you can clearly see the start and end of the code -->
+<html>
+
+<!-- the <head> section is for all the information that is needed by the browser but does NOT show up on the page -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Escape Room</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+
+<!-- the <body> section is for all the content that is actually displayed on the page -->
+	<body>
+	
+
+		<div class="column blue" id="blue">
+			<div class="column red" id="red">
+				<div class="column yellow" id="yellow">
+					<div class="center-content">
+						<img src="images/neeganbattwo.png" id="bat" class="restrict-img-size" onClick="nextImage(this)" />
+					</div>
+				</div>
+				<div class="column yellowtwo" id="yellowtwo">
+					<div class="center-content">
+						<img src="images/stick.png" id="stick" class="restrict-img-size" onClick="nextImagetwo(this)" />
+					</div>
+				</div>
+				<div class="column yellowthree" id="yellowthree">
+					<div class="center-content">
+						<img src="images/toytruck.png" id="truck" class="restrict-img-size" onClick="nextImagethree(this)" />
+				</div>
+				</div>
+				<div class="column yellowfour" id="yellowfour">
+					<div class="center-content">
+						<img src="images/mic.png" id="mic" class="restrict-img-size" onClick="nextImagefour(this)"/>
+					</div>
+				</div>
+			</div>
+			<div class="column green" id="green">
+				<div class="column purple" id="purple">
+				<marquee behavior="scroll" direction="left">You are in a field full of zombies. You find 4 items on the ground, which items are the ones you'll use to kill zombies.</marquee>
+					<div class="center-content">
+						<img src="images/zombie.jpg" id="bzombie" class="restrict-img-size" />
+					</div>
+				</div>
+				<div class="column purple" id="purple2">
+					<div class="center-content">
+						<img src="images/neeganzombie.jpg" id="checkanswer" class="restrict-img-size" onClick="checkConfiguration(this)"/>
+					</div>
+				</div>
+				<div class="column purple" id="purple3">
+				<marquee behavior="scroll" direction="left">Click on neegan to strike the zombies and get the key....thats if your answer is right.</marquee>
+					<div class="center-content">
+						<img src="images/zombie.jpg" id="bzombie" class="restrict-img-size" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+		
+		</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+
+</html>
