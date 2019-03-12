@@ -71,6 +71,10 @@ display: flex;
 	border-width: 2px;
 }
 
+.display{
+display: none;
+}
+
 .purple2 {
 	background-color: gray;
 	height:100%;

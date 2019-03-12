@@ -3,10 +3,10 @@
 	
 	
 var audio = document.getElementById("you-win");
-a = document.getElementById("bat");
-b = document.getElementById("stick");
-c = document.getElementById("truck");
-d = document.getElementById("mic");
+var a = document.getElementById("bat");
+var b = document.getElementById("stick");
+var c = document.getElementById("truck");
+var d = document.getElementById("mic");
 	
 // "el" stands for the "element" that was just clicked
 function allOpaque(el){
@@ -84,9 +84,23 @@ function checkConfiguration(el){
 		document.getElementById("truck").classList.add("opaque");
 		document.getElementById("mic").classList.add("opaque");
 		document.getElementById("checkanswer").src = "images/key.png";
-		alert("Correct! Click the key to advance!");
 
 	} else {
-		
+		alert("Wrong! Your dead:(");
 	}
+}
+
+function  checkConfigurationtwo(el){
+	if(a.src.match("images/neeganbattwo.png") && b.src.match("images/neeganbattwo.png") && c.src.match("images/neeganbattwo.png") && d.src.match("images/neeganbattwo.png")){
+		a.classList.add("opaque");
+		b.classList.add("opaque");
+		c.classList.add("opaque");
+		d.classList.add("opaque");
+		document.getElementById("checkanswer").classList.add("display");
+		document.getElementById("key").classList.remove("display");
+		alert("Correct! Click the key to enter the next room:)");
+	} else {
+		alert("Wrong! Your dead:(");
+	}
+	// when the JACKPOT! button is clicked, play the slot machine sound
 }
