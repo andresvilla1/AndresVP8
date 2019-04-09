@@ -73,7 +73,7 @@ function  checkConfigurationtwo(el){
 		d.classList.add("opaque");
 		document.getElementById("checkanswer").classList.add("display"); // when it this occurs, it gets the id and adds the display class
 		document.getElementById("key").classList.remove("display"); // when this occurs, it gets he id and removes the display class it was originally on.
-		alert("Correct! Click the key to enter the next room:)");
+		alert("Correct! Click ok and then the key to enter the next room:)");
 	} else {
 		alert("Wrong! Your dead:("); // an alert is like a notification that pops up on the screen saying something. 
 	}
